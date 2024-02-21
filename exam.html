@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("Enter the size of the array"));
+        document.write(n+"<br>");
+        let a=[];
+        let sum=0;
+        let s;
+        for(let i=0;i<n;i++)
+        {
+            let element=parseInt(prompt("Enter the elements"));
+            a.push(element);
+        }
+        document.write(a+'\n');
+        let sub=[]
+        for(let i=0;i<n;i++)
+        {
+        sum+=a[i];
+        sub.push(sum);
+        }
+    //    document.write(sub);
+    s=sub.sort(function(a, b){return b - a});
+    document.write("<br>"+s[0]);
+    </script>
+</body>
+</html>
